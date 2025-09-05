@@ -1,3 +1,32 @@
-h1{
-  color: red;
+p{
+    font-weight: bold;
+    font-family: monospace;
+    font-size: 20px;
+    text-align: left;
 }
+
+
+
+h6{
+    padding: 20px;
+    margin:10px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: lighter;
+    text-align: left;
+
+}
+
+li{
+    font-style: oblique;
+    color: rgb(188, 71, 188);
+    text-align: left;
+
+}
+
+#help{
+    color: red;
+}
+
+tr,td, th {
+    border: 0.5px dotted black;
+  }
