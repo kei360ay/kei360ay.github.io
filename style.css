@@ -5,7 +5,9 @@ p{
     text-align: left;
 }
 
-
+#nihao{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
 
 h6{
     padding: 20px;
