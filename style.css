@@ -193,14 +193,6 @@ footer {
 .projects-table tr:nth-child(even) {
     background: #23272a;
 }
-
-.project-card {
-    background: #393e46;
-    border-radius: 12px;
-    padding: 18px 24px;
-    color: #f0fff6;
-    min-width: 220px;
-    max-width: 300px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-    text-align: left;
+.projects-table tr:hover {
+    background: #4a4f57;
 }
