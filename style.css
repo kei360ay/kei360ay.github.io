@@ -44,18 +44,16 @@ header h1, .about-me h2, footer p {
 
 .text-box {
     flex: 1;
-    min-height: 180px;
-    background: #1f2021;
-    border-radius: 1px;
+    min-height: 140px;
+    background: #393e46;
+    border-radius: 18px;
     color: #f0fff6;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 16px;
-    font-weight: lighter;
-    font-family: 'Segoe UI', Arial, sans-serif;
-    padding: 2px;
-    box-sizing: border-box;
+    padding: 18px;
+    margin: auto;
 }
 
 .skills-section {
@@ -93,16 +91,15 @@ header h1, .about-me h2, footer p {
 
 .skills-box {
     flex: 1;
-    min-height: 80px;
+    min-height: 50px;
     background: #393e46;
     border-radius: 18px;
     color: #f0fff6;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1.1rem;
+    font-size: 16px;
     padding: 18px;
-    box-sizing: border-box;
 }
 
 footer {
@@ -181,6 +178,11 @@ footer {
     background: #393e46;
     overflow: hidden;
     box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    table-layout: fixed;
+}
+
+.projects-table th{
+    width: 50px; /* Adjust as needed */
 }
 
 .projects-table th,
@@ -189,6 +191,12 @@ footer {
     padding: 16px;
     color: #f0fff6;
     text-align: left;
+    word-wrap: break-word;
+    overflow: hidden;
+}
+
+.projects-table th:first-child, .projects-table td:first-child {
+    width: 1px; /* Adjusted width for the project title column */
 }
 
 .projects-table th {
@@ -201,4 +209,66 @@ footer {
 }
 .projects-table tr:hover {
     background: #4a4f57;
+}
+
+.lampbase-image {
+width: 300px;
+    height: auto;
+    align-items: center;
+    border-radius: 12px;
+    margin-top: 18px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+    
+.project-image {
+    width: 70%;
+    height: auto;
+    align-items: center;
+    border-radius: 12px;
+    margin-top: 18px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.links {
+    color: #c0ebff;
+    text-decoration: none;
+}
+
+.links:hover {
+    text-decoration: underline;
+}
+
+/* Add fade-in and move-up animations */
+@keyframes fadeInMoveUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Apply animation to sections */
+.tab-content {
+    opacity: 0;
+    animation: fadeInMoveUp 0.5s ease forwards;
+}
+
+/* Restore layout styles while ensuring visibility */
+.about-me {
+    display: block;
+    opacity: 1;
+}
+
+.main-content {
+    display: flex; /* Restore flex layout */
+    opacity: 1;
 }
