@@ -37,13 +37,21 @@ document.addEventListener('DOMContentLoaded', () => {
                         skillsSection.style.opacity = '1';
                         skillsSection.classList.add('tab-content');
                     }
-                } else if (targetId === 'projects') {
+                } else if (targetId === 'projects-section') {
                     // Show all elements relevant to the "projects" section
-                    const projectsSection = document.querySelector('.projects-table');
+                    const projectsSection = document.querySelector('.projects-section');
+                    const projectsTable = document.querySelector('.projects-table');
+
                     if (projectsSection) {
                         projectsSection.style.display = 'block';
                         projectsSection.style.opacity = '1';
                         projectsSection.classList.add('tab-content');
+                    }
+
+                    if (projectsTable) {
+                        projectsTable.style.display = 'block';
+                        projectsTable.style.opacity = '1';
+                        projectsTable.classList.add('tab-content');
                     }
                 } else {
                     // Show the target section

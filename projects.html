@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Projects</title>
     <link rel="stylesheet" href="style.css">
+    <script src="dynamics.js"></script>
 </head>
 <body>
     <header>
@@ -12,39 +13,35 @@
             <div class="navbar-title">Portfolio</div>
             <ul class="navbar-menu">
                 <li><a href="index.html">about me</a></li>
-                <li><a href="projects.html">projects</a></li>
+                <li><a href="#projects-section">projects</a></li>
             </ul>
         </nav>
     </header>
-    <main>
-        <section class="projects-section">
+    <section class="projects-section" id="projects-section">
             <h2>My Projects</h2>
-            <div class="projects-list">
-                <table class="projects-table">
-                    <thead>
-                        <tr>
-                            <th>Project Title</th>
-                            <th>Description</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td><a href="makerspace.html" class="links">Maker Space</a></td>
-                            <td>The Maker Space is a place for creativity, collaboration, and innovation.</td>
-                        </tr>
-                        <tr>
-                            <td><a href="lampbase.html" class="links">Lamp Base</a></td>
-                            <td>This lamp base was an experimental piece focusing on using recycled plastic.</td>
-                        </tr>
-                        <!-- Add more rows as needed -->
-                    </tbody>
-                </table>
-            </div>
-        </section>
+    </section>
+    <main>
+        <div class="projects-table">
+            <table>
+                <tr>
+                    <th>Project Title</th>
+                    <th>Description</th>
+                </tr>
+                <tbody>
+                    <tr>
+                        <td><a href="makerspace.html" class="links">Maker Space</a></td>
+                        <td>The Maker Space is a place for creativity, collaboration, and innovation.</td>
+                    </tr>
+                    <tr>
+                        <td><a href="lampbase.html" class="links">Lamp Base</a></td>
+                        <td>This lamp base was an experimental piece focusing on using recycled plastic.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </main>
     <footer>
         <p>footer</p>
     </footer>
-    <script src="dynamics.js"></script>
 </body>
 </html>
