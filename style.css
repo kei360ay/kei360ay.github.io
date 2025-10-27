@@ -1,9 +1,9 @@
 body {
+    margin: 0;
+    padding: 0;
     background: #1f2021;
     color: #f0fff6;
     font-family: 'Segoe UI', Arial, sans-serif;
-    margin: 0;
-    padding: 0;
 }
 
 header, .about-me, footer {
@@ -146,19 +146,15 @@ footer {
     background: #393e46;
 }
 
-
+/* Table styles for projects section */
 .projects-section {
     background: #23272a;
     border-radius: 18px;
-    margin: 36px auto 0 auto;
-    width: 90%;
-    max-width: 900px;
-    padding: 24px;
+    margin: 10px auto 0 auto; /* Center the section horizontally */
+    width: 80%; /* Reduced from 90% to match the table width */
+    padding: 2px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.04);
     text-align: center;
-}
-
-.projects-section h2 {
     margin-top: 0;
     color: #f0fff6;
     font-weight: 400;
@@ -171,17 +167,16 @@ footer {
 }
 
 .projects-table {
-    width: 100%;
+    width: 90%; /* Reduced from 100% to 80% */
     border-collapse: collapse;
     margin: 0 auto;
     background: #393e46;
     overflow: hidden;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
     table-layout: fixed;
 }
 
 .projects-table th{
-    width: 50px; /* Adjust as needed */
+    width: 60px; /* Adjust as needed */
 }
 
 .projects-table th,
@@ -194,13 +189,20 @@ footer {
     overflow: hidden;
 }
 
-.projects-table th:first-child, .projects-table td:first-child {
-    width: 1px; /* Adjusted width for the project title column */
-}
-
 .projects-table th {
     background: #23272a;
     font-weight: 500;
+    max-width: 500px;
+}
+
+.projects-table th:nth-child(1), /* Project Title column */
+.projects-table td:nth-child(1) {
+    width: 30%; /* Make the Project Title column larger */
+}
+
+.projects-table th:nth-child(2), /* Description column */
+.projects-table td:nth-child(2) {
+    width: 70%; /* Make the Description column smaller */
 }
 
 .projects-table tr:nth-child(even) {
@@ -210,18 +212,7 @@ footer {
     background: #4a4f57;
 }
 
-.lampbase-image {
-width: 300px;
-    height: auto;
-    align-items: center;
-    border-radius: 12px;
-    margin-top: 18px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-    
+
 .project-image {
     width: 70%;
     height: auto;
@@ -265,9 +256,28 @@ width: 300px;
 .about-me {
     display: block;
     opacity: 1;
+    margin-bottom: 20px; /* Add spacing below About Me section */
 }
 
 .main-content {
     display: flex; /* Restore flex layout */
     opacity: 1;
+}
+
+.lampbase-image {
+width: 300px;
+    height: auto;
+    align-items: center;
+    border-radius: 12px;
+    margin-top: 18px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.background-block {
+    width: 100%;
+    height: 20px; /* Adjust height as needed */
+    background: #1f2021; /* Match the body background color */
 }

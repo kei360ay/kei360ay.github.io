@@ -2,6 +2,12 @@ document.addEventListener('DOMContentLoaded', () => {
     const links = document.querySelectorAll('.navbar-menu a');
     const sections = document.querySelectorAll('section, main > div'); // Select all sections and main content divs
 
+    // Hide the projects section on initial load
+    const projectsSection = document.querySelector('.projects-section');
+    if (projectsSection) {
+        projectsSection.style.display = 'none';
+    }
+
     links.forEach(link => {
         link.addEventListener('click', (e) => {
             e.preventDefault();
@@ -65,10 +71,4 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Ensure the first section is visible on page load
-    const firstSection = document.querySelector('section, main > div');
-    if (firstSection) {
-        firstSection.style.display = 'block';
-        firstSection.style.opacity = '1';
-    }
 });
